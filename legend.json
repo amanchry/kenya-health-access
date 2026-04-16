@@ -1,0 +1,52 @@
+{
+  "layers": [
+    {
+      "id": "kakamega-county",
+      "name": "Kakamega county",
+      "type": "vector",
+      "sld": "sld/kakamega-county.sld"
+    },
+    {
+      "id": "road-network",
+      "name": "Road network",
+      "type": "vector",
+      "sld": "sld/road-network.sld"
+    },
+    {
+      "id": "health-facilities",
+      "name": "Health facilities",
+      "type": "vector",
+      "sld": "sld/health-facilities.sld"
+    },
+    {
+      "id": "high-malaria-risk-low-access-zones",
+      "name": "High malaria risk & low access zones",
+      "type": "vector",
+      "sld": "sld/high-malaria-risk-low-access-zones.sld"
+    },
+    {
+      "id": "accessibility-zones",
+      "name": "Accessibility Zones ",
+      "type": "vector",
+      "sld": "sld/accessibility-zones.sld"
+    },
+    {
+      "id": "population-2002-people-per-pixel",
+      "name": "Population 2002 (people per pixel)",
+      "type": "raster",
+      "sld": "sld/population-2002-people-per-pixel.sld"
+    },
+    {
+      "id": "population-2020-people-per-pixel",
+      "name": "Population 2020 (people per pixel)",
+      "type": "raster",
+      "sld": "sld/population-2020-people-per-pixel.sld"
+    },
+    {
+      "id": "population-growth-2002-22",
+      "name": "Population growth(%) (2002-22)",
+      "type": "vector",
+      "sld": "sld/population-growth-2002-22.sld"
+    }
+  ]
+}

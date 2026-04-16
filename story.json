@@ -1,0 +1,45 @@
+{
+  "sections": [
+    {
+      "key": "intro",
+      "title": "Introduction",
+      "body": "Access to basic health care is a key indicator of social development and human well-being. The World Health Organization (WHO) and the Government of Kenya recognize that geographical accessibility\u2014how far people must travel to reach a health facility\u2014is an essential component of achieving Universal Health Coverage (UHC) and the Sustainable Development Goals (SDG 3: Good Health and Well-Being). According to WHO standards, every person should ideally reside within five kilometres or one hour of walking distance from a primary health facility. However, in many regions of Kenya, this target remains unmet due to rapid population growth, inadequate infrastructure, and physical barriers such as terrain and road conditions. These limitations continue to affect equitable access to health services, especially in rural areas. Malaria remains a major health challenge in Kenya, especially in western part. Although national malaria control programs have reduced infections, some areas still face high risk\u2014often where access to health facilities is limited.\nThis study maps health facilities, population distribution, and malaria risk in Kakamega County. The aim is to find out where people have limited access to care and to support fairer health service planning in line with SDG 3 and SDG 10 (Reduced Inequalities).",
+      "center": null,
+      "zoom": 12
+    },
+    {
+      "key": "sec:52ba7b88ea",
+      "title": "Study Area",
+      "body": "Study carried out on Kakamega County, located in western Kenya, covers approximately 2,441 km\u00b2 and hosts over two million residents, making it among Kenya's most densely populated counties. The terrain is gently undulating with elevations ranging from 1,240 m to 2,010 m, fertile agricultural land, and patches of tropical forest. Kakamega was selected for this study due to its high malaria cases and health-care accessibility challenges. Recent Ministry of Health data (2023) show residents in western counties\u2014particularly Kakamega, Busia, and Bungoma\u2014face malaria risks up to six times higher than the national average, accounting collectively for over 58% of Kenya's malaria cases.",
+      "center": [
+        34.67573048139142,
+        0.33120230685320107
+      ],
+      "zoom": 10
+    },
+    {
+      "key": "sec:d63c7495dd",
+      "title": "Methodology",
+      "body": "The study used an integrated GIS framework in QGIS combining three analytical approaches. First, network-based accessibility modelling was performed using the QNEAT3 plugin, generating isochrone zones at 1 km intervals (0\u20135 km) around health facilities using the road network from OpenStreetMap, with a uniform walking speed of 5 km/h. A \"beyond 5 km\" polygon was derived by differencing the county boundary from the merged service area.\nSecond, population coverage analysis overlaid WorldPop 2020 gridded population data (100 m resolution) with the isochrone zones using zonal statistics to estimate the number and proportion of residents within and beyond the 5 km threshold.\nThird, malaria risk overlay analysis used the Malaria Atlas Project PfPR\u2082\u208b\u2081\u2080 2024 raster (5 km resolution). Because malaria had declined below global \"high\" thresholds, a locally adaptive 90th percentile cutoff of PfPR \u2265 0.07 (7%) was applied to define elevated-risk zones, which were then intersected with the beyond-5 km layer to identify double-vulnerable populations.\nFinally, Voronoi polygons were generated from health facility points to define theoretical catchment areas, and WorldPop rasters for 2002 and 2020 were overlaid to compute population density and growth rates per catchment, identifying facilities under the greatest demographic pressure.\nDatasets: Kakamega County boundary (GADM), road network (OSM), health facility locations (Kenya Ministry of Health WFS), population grids (WorldPop), and malaria prevalence raster (Malaria Atlas Project). All layers were reprojected to UTM Zone 36N (EPSG:32636) and stored in a PostgreSQL/PostGIS schema.",
+      "center": null,
+      "zoom": 12
+    },
+    {
+      "key": "sec:4a7cc38e88",
+      "title": "Results",
+      "body": "The accessibility analysis found that 88% of Kakamega County's area (2,148.8 km\u00b2) falls within 5 km of a health facility, while 12% (292.8 km\u00b2) lies beyond this threshold. In population terms, approximately 93% of residents \u2014 around 1.7 million people \u2014 live within the accessible range, while 7.4% (about 137,000 people) remain underserved.\nHigh malaria risk zones (PfPR \u2265 0.07), concentrated in western and south-western sub-counties including Mumias West, Butere, and Khwisero, covered approximately 64 km\u00b2 when intersected with the beyond-5 km area. About 38,250 people (2.1% of the county population) live in these double-vulnerability zones \u2014 facing both elevated malaria risk and poor healthcare access.\nPopulation density analysis across Voronoi catchments revealed dramatic growth between 2002 and 2020. Peri-urban catchments around Kakamega Town, Mumias, and Butere saw densities rise from under 500 to over 2,000 people/km\u00b2. The five fastest-growing catchments \u2014 including Bulimbo Central Medical Clinic (164% growth) and Ileho Health Centre (104%) \u2014 highlight facilities under severe pressure. In contrast, western Matungu and northern Kabras remain sparsely populated and poorly connected.",
+      "center": [
+        34.474588944818514,
+        0.36841611209350045
+      ],
+      "zoom": 12
+    },
+    {
+      "key": "sec:13dc3cdfcc",
+      "title": "Conclusions",
+      "body": "The study confirms that while overall healthcare coverage in Kakamega County has improved, significant spatial inequities persist. About 12% of the land area and 7% of the population remain beyond the WHO-recommended 5 km access threshold, with the most underserved pockets in western Matungu, northern Kabras, and the forested Shinyalu periphery. Approximately 38,000 residents face the compounded vulnerability of both high malaria exposure and poor facility access. Rapid population growth in peri-urban catchments has further strained existing services.\nThe findings point to three actionable priorities: establishing or upgrading facilities in Matungu West, Kabras North, and Shinyalu Forest periphery; deploying mobile outreach in remote low-density zones; and integrating malaria control planning with spatial health infrastructure decisions. The study advances the goals of SDG 3.8 (Universal Health Coverage) and the Kenya Health Policy 2014\u20132030 through reproducible, open-data GIS methods.",
+      "center": null,
+      "zoom": 12
+    }
+  ]
+}

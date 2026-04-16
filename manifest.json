@@ -1,0 +1,162 @@
+{
+  "version": 3,
+  "title": "Accessibility of healthcare facilities and\nmalaria prevalence in Kenya",
+  "layers": [
+    {
+      "type": "vector",
+      "renderMode": "tiles",
+      "order": 0,
+      "id": "kakamega-county",
+      "name": "Kakamega county",
+      "bbox": [
+        34.34306436612455,
+        0.09327853468598542,
+        34.97861062357737,
+        0.6558596153406532
+      ],
+      "opacity": 1.0,
+      "tilesUrl": "tiles/kakamega-county/{z}/{x}/{y}.png",
+      "minZoom": 0,
+      "maxZoom": 14,
+      "tileSize": 256,
+      "tileCount": 1064
+    },
+    {
+      "type": "vector",
+      "renderMode": "tiles",
+      "order": 1,
+      "id": "road-network",
+      "name": "Road network",
+      "bbox": [
+        34.343912450195496,
+        0.09348012092607122,
+        34.96911254526787,
+        0.6554031541669542
+      ],
+      "opacity": 1.0,
+      "tilesUrl": "tiles/road-network/{z}/{x}/{y}.png",
+      "minZoom": 0,
+      "maxZoom": 14,
+      "tileSize": 256,
+      "tileCount": 1038
+    },
+    {
+      "type": "vector",
+      "renderMode": "tiles",
+      "order": 2,
+      "id": "health-facilities",
+      "name": "Health facilities",
+      "bbox": [
+        34.37596272188815,
+        0.10085114929337632,
+        34.96097391650476,
+        0.6058759934192216
+      ],
+      "opacity": 1.0,
+      "tilesUrl": "tiles/health-facilities/{z}/{x}/{y}.png",
+      "minZoom": 0,
+      "maxZoom": 14,
+      "tileSize": 256,
+      "tileCount": 915
+    },
+    {
+      "type": "vector",
+      "renderMode": "tiles",
+      "order": 3,
+      "id": "high-malaria-risk-low-access-zones",
+      "name": "High malaria risk & low access zones",
+      "bbox": [
+        34.34306436612455,
+        0.09329527457814812,
+        34.6567176041016,
+        0.4893294888008937
+      ],
+      "opacity": 1.0,
+      "tilesUrl": "tiles/high-malaria-risk-low-access-zones/{z}/{x}/{y}.png",
+      "minZoom": 0,
+      "maxZoom": 14,
+      "tileSize": 256,
+      "tileCount": 433
+    },
+    {
+      "type": "vector",
+      "renderMode": "tiles",
+      "order": 4,
+      "id": "accessibility-zones",
+      "name": "Accessibility Zones ",
+      "bbox": [
+        34.34391253475008,
+        0.09567686066960616,
+        34.96910696961412,
+        0.6409629585095914
+      ],
+      "opacity": 1.0,
+      "tilesUrl": "tiles/accessibility-zones/{z}/{x}/{y}.png",
+      "minZoom": 0,
+      "maxZoom": 14,
+      "tileSize": 256,
+      "tileCount": 1038
+    },
+    {
+      "type": "raster",
+      "renderMode": "tiles",
+      "order": 5,
+      "id": "population-2002-people-per-pixel",
+      "name": "Population 2002 (people per pixel)",
+      "bbox": [
+        34.34306436612455,
+        0.09327853468598547,
+        34.97861062357737,
+        0.6558596153406532
+      ],
+      "opacity": 1.0,
+      "queryable": false,
+      "tilesUrl": "tiles/population-2002-people-per-pixel/{z}/{x}/{y}.png",
+      "minZoom": 0,
+      "maxZoom": 14,
+      "tileSize": 256,
+      "tileCount": 1064
+    },
+    {
+      "type": "raster",
+      "renderMode": "tiles",
+      "order": 6,
+      "id": "population-2020-people-per-pixel",
+      "name": "Population 2020 (people per pixel)",
+      "bbox": [
+        34.34306436612455,
+        0.09327853468598547,
+        34.97861062357737,
+        0.6558596153406532
+      ],
+      "opacity": 1.0,
+      "queryable": false,
+      "tilesUrl": "tiles/population-2020-people-per-pixel/{z}/{x}/{y}.png",
+      "minZoom": 0,
+      "maxZoom": 14,
+      "tileSize": 256,
+      "tileCount": 1064
+    },
+    {
+      "type": "vector",
+      "renderMode": "tiles",
+      "order": 7,
+      "id": "population-growth-2002-22",
+      "name": "Population growth(%) (2002-22)",
+      "bbox": [
+        34.34306436612455,
+        0.09327853468598542,
+        34.97861062357737,
+        0.6558596153406532
+      ],
+      "opacity": 1.0,
+      "tilesUrl": "tiles/population-growth-2002-22/{z}/{x}/{y}.png",
+      "minZoom": 0,
+      "maxZoom": 14,
+      "tileSize": 256,
+      "tileCount": 1064
+    }
+  ],
+  "story": "story.json",
+  "legend": "legend.json"
+}
